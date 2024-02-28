@@ -8,16 +8,25 @@ const obj = {
   },
 };
 
-obj.greeting();
+// obj.greeting();
 
 function greet() {
   console.log(this);
 }
 
-greet();
+// greet();
 
 const arrow = () => {
   console.log(this);
 };
 
-arrow();
+// arrow();
+
+const arr = [10, 20, 67, 123, 44];
+
+const res = arr.map((item) => {
+  return item * 2;
+});
+
+console.log(res);
+console.log(arr);
